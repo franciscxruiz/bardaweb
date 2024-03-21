@@ -1,0 +1,304 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color-bg: #360379;
+  --secondary-color-bg: #f2e205;
+  --primary-color-text: #1f1d1c;
+  --secondary-color-text: #fff;
+  --light-color-text: rgba(31, 29, 28, 0.6);
+  --color-gradient-1: linear-gradient(0deg, #f2e205 2.51%, #360379 99.75%);
+  --color-gradient-2: linear-gradient(90deg, #ffffff 0%, #360379 100%);
+  --ff-accent: "Poppins", sans-serif;
+  --ff-primary: "Lora", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+body {
+  font-family: var(--ff-accent);
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  color: var(--primary-color-text);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.bigger {
+  font-size: 3rem;
+}
+
+.white {
+  color: var(--secondary-color-text);
+}
+
+.bg-amarillo {
+  background-color: var(--secondary-color-bg);
+}
+
+.bg-gradient {
+  background: var(--color-gradient-1);
+}
+
+.bg-morado {
+  background-color: var(--primary-color-bg);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color-bg);
+  color: var(--primary-color-text);
+  width: 280px;
+  height: 64px;
+  align-self: center;
+  border-radius: 0.5em;
+  margin-top: 2em;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn:hover {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn_cta:hover {
+  background-color: var(--primary-color-bg);
+  border: solid #1f1d1c;
+  color: var(--secondary-color-text);
+}
+
+.btn-morado {
+  background-color: var(--primary-color-bg);
+  color: var(--secondary-color-text);
+}
+
+.btn-menu:hover {
+  opacity: 0.7;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+  max-width: 34rem;
+}
+
+.ctaform {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  gap: 0.5em;
+  margin-top: 2em;
+}
+
+.description-img {
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--primary-color-accent);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.hero--textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  padding: 0.5 0;
+}
+section {
+  padding: 4rem 0;
+}
+
+@media (min-width: 40em) {
+  header,
+  section {
+    padding: 7rem 0;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  height: 64px;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem;
+}
+
+.lateral-menu-centrado {
+  margin-top: 9.8rem;
+  margin-left: 4rem;
+}
+
+.less-padding {
+  padding-top: 0;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.logo {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.menu--btns {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .off {
+    display: none;
+  }
+}
+
+.planes {
+  width: 60px;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+::placeholder {
+  color: var(--primary-color-text);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}
+
+.service-card {
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.service-options {
+  font-size: 1rem;
+}
+
+.overflow-control {
+  overflow-x: hidden;
+}
+
+/*-----MENU HAMBURGUESA-----*/
+
+.main-container {
+  white-space: nowrap;
+  position: relative;
+  left: -300px;
+  transition: left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.main-container.abrir {
+  left: 0px;
+}
+
+.main-container .content {
+  width: 100%;
+}
+
+.main-container * {
+  white-space: normal;
+}
+
+.main-container .content,
+.main-container .lateral-menu {
+  display: inline-block;
+  margin-right: -5.8px;
+  vertical-align: top;
+  height: 100vh;
+}
+
+.main-container .lateral-menu {
+  width: 300px;
+}
+
+
+.white{
+  color: #fff;
+}
